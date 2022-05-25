@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -13,54 +14,31 @@ body {
     border: 1px solid rgba(0,0,0,0.4);
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 250px;
+    margin-top: 380px;
     margin-bottom: 100px;
-    
+    padding: 2%;
 }
 
-header{
-    text-align: center;
-    margin-bottom: 3%;
+h1 {
+    margin-bottom: 30px;
 }
 
-img {
-    width: 25%;
+.web{
+   width: 10%;
+}
+
+.instagram{
+    width: 10%;
+}
+
+.twitter{
+    width: 10%;
  }
 
+ .ranking{
+    width: 10%;
+ }
 
-h2 {
-    color: rgb(0, 0, 0);
-    text-size-adjust: 50%;
-}
-
-.formularioinicio {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.boton{
-    font-size:10px;
-    font-family:Verdana,Helvetica;
-    font-weight:bold;
-    color:white;
-    background:#888888;
-    border:0px;
-    width:80px;
-    height:19px;
-} 
-
-footer {
-    color: white;
-}
-
-.botonf{
-    font-size:10px;
-    font-family:Verdana,Helvetica;
-    font-weight:bold;
-    color:white;
-    background:#888888;
-    border:0px;
-    width:80px;
-    height:19px;
-} 
+ .inicio{
+    width: 10%;
+ }

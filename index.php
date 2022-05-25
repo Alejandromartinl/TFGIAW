@@ -8,7 +8,6 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="estilosindex.css">
 </head>
-
 <body>
     <?php
     session_start();
@@ -17,7 +16,7 @@
     <div class="primera">
     <header>
         <img src="nba.png" alt="">
-        <h2>Iniciar sesión</h2>
+        <h2 class="iniciar">Iniciar sesión</h2>
     </header>
     <main>
             <form action="" method="post" class="formularioinicio">
@@ -33,21 +32,22 @@
     </main>
     </div>
 
+    </body>
     <!-- SEGUNDA PÁGINA -->
     <footer>
-    <div class="titulosegundo">
     <?php
     } else {
+        echo "<div>";
         $_SESSION['usuario'] = $_POST['usuario'];
-        echo "<h2 >Bienvenido " . $_SESSION['usuario'] . "</h2>"; 
-        echo "<b>Indique la tabla que desea modificar.</b>";
+        echo "<h2>Bienvenid/a " . $_SESSION['usuario'] . "</h2>"; 
+        echo "<b>Indique la tabla que desea modificar.</b> <br>";
         ?>
-    </div>
+        <br>
         <form action="" method="post" class="formulariofinal">
-            <p><b><input type="radio" name="rol" value="equipo">Equipos</b></p>
-            <p><b><input type="radio" name="rol" value="presidente">Presidentes</b></p>
-            <p><b><input type="radio" name="rol" value="jugador">Jugadores</b></p>
-            <input type="submit" name="siguiente" value="Siguiente" class="botonf">
+            <p><b><input type="radio" name="rol" value="equipo">Equipos</b></p><br>
+            <p><b><input type="radio" name="rol" value="presidente">Presidentes</b></p><br>
+            <p><b><input type="radio" name="rol" value="jugador">Jugadores</b></p><br>
+            <p><input type="submit" name="siguiente" value="Siguiente" class="botonf"></p>
         </form>
     <?php
     }
@@ -55,8 +55,8 @@
         $_SESSION['rol'] = $_POST['rol'];
         header('Location: registros.php');
     }
+    echo "</div>";
     ?>
     </footer>
-</body>
 
 </html>

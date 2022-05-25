@@ -28,25 +28,24 @@
     <main>
     <div class="equipos">
         <form action="" method="post">
-            Código
-            <input type="number" name="codigo" required>
-            Nombre
-            <input type="text" name="nombre">
-            Ciudad
-            <input type="text" name="ciudad">
-            Entrenador
-            <input type="text" name="entrenador">
-            Estadio
-            <input type="text" name="estadio">
-            Fecha Fundación
-            <input type="date" name="fecha">
-            <p><input type="submit" value="Insertar" name="insertar">
-                <input type="submit" value="Modificar" name="modificar">
-                <input type="submit" value="Eliminar" name="eliminar">
-                <input type="submit" value="Mostrar" name="mostrar">
-                <input type="reset" value="Limpiar" name="limpiar">
-                <a href="final.php"><input type="button" value="Salir" name="salir"></a>
-            </p>
+            <p>Código
+            <input type="number" name="codigo" required></p><br>
+            <p>Nombre
+            <input type="text" name="nombre"></p><br>
+            <p>Ciudad
+            <input type="text" name="ciudad"></p><br>
+            <p>Entrenador
+            <input type="text" name="entrenador"></p><br>
+            <p>Estadio
+            <input type="text" name="estadio"></p><br>
+            <p>Fecha Fundación
+            <input type="date" name="fecha"></p><br>
+            <p><input type="submit" value="Insertar" name="insertar" class="botonf">
+                <input type="submit" value="Modificar" name="modificar" class="botonf">
+                <input type="submit" value="Eliminar" name="eliminar" class="botonf">
+                <input type="submit" value="Mostrar" name="mostrar" class="botonf">
+                <input type="reset" value="Limpiar" name="limpiar" class="botonf">
+                <a href="final.php"><input type="button" value="Salir" name="salir" class="botonf"></a></p>
         </form>
     </div>
         <?php
@@ -117,13 +116,13 @@
     </header>
     <div class="presidentes">
         <form action="" method="post">
-            DNI
-            <input type="text" name="dni" required>
-            Nombre
-            <input type="text" name="nombre">
-            Apellidos
-            <input type="text" name="apellidos">
-            Sexo
+            <p>DNI
+            <input type="text" name="dni" required></p><br>
+            <p>Nombre
+            <input type="text" name="nombre"></p><br>
+            <p>Apellidos
+            <input type="text" name="apellidos"></p><br>
+            <p>Sexo
             <?php
             $sex = array(
                 "H" => "Hombre",
@@ -132,10 +131,10 @@
             foreach ($sex as $key => $value) {
                 echo "<input type=radio value=" . $key . " name='sexo'>$value";
             }
-            ?>
-            Fecha Nacimiento
-            <input type="date" name="fecha">
-            Equipo
+            ?></p><br>
+            <p>Fecha Nacimiento
+            <input type="date" name="fecha"></p><br>
+            <p>Equipo
             <select name="equipo">
                 <option value="" disabled></option>
                 <?php
@@ -147,14 +146,13 @@
                     echo "<option value=" . $codigo . ">" .$nombre. "</option>";
                 }
                 ?>
-            </select>
-            <p><input type="submit" value="Insertar" name="insertar">
-                <input type="submit" value="Modificar" name="modificar">
-                <input type="submit" value="Eliminar" name="eliminar">
-                <input type="submit" value="Mostrar" name="mostrar">
-                <input type="reset" value="Limpiar" name="limpiar">
-                <a href="final.php"><input type="button" value="Salir" name="salir"></a>
-            </p>
+            </select></p><br>
+            <p><input type="submit" value="Insertar" name="insertar" class="botonf">
+                <input type="submit" value="Modificar" name="modificar" class="botonf">
+                <input type="submit" value="Eliminar" name="eliminar" class="botonf">
+                <input type="submit" value="Mostrar" name="mostrar" class="botonf">
+                <input type="reset" value="Limpiar" name="limpiar" class="botonf">
+                <a href="final.php"><input type="button" value="Salir" name="salir" class="botonf"></a></p>
         </form>
             </div>
         <?php
@@ -222,19 +220,19 @@
     </header>
     <div class="jugadores">
         <form action="" method="post">
-            DNI
-            <input type="text" name="dni" required>
-            Nombre
-            <input type="text" name="nombre">
-            Apellidos
-            <input type="text" name="apellidos">
-            Fecha Nacimiento
-            <input type="date" name="fecha">
-            Email
-            <input type="email" name="email">
-            Telefono
-            <input type="number" name="telefono">
-            Equipo
+            <p>DNI
+            <input type="text" name="dni" required></p><br>
+            <p>Nombre
+            <input type="text" name="nombre"></p><br>
+            <p>Apellidos
+            <input type="text" name="apellidos"></p><br>
+            <p>Fecha Nacimiento
+            <input type="date" name="fecha"></p><br>
+            <p>Email
+            <input type="email" name="email"></p><br>
+            <p>Telefono
+            <input type="number" name="telefono"></p><br>
+            <p>Equipo
             <select name="equipo">
                 <?php
                 mysqli_select_db($enlace, $bd);
@@ -245,28 +243,27 @@
                     echo "<option value=" . $codigo . ">" .$nombre. "</option>";
                 }
                 ?>
-            </select>
-            Posición
+            </select></p><br>
+            <p>Posición
             <?php
             $pos = array(
-                "Base" => "Base",
-                "Escolta" => "Escolta",
-                "Alero" => "Alero",
-                "Pivot" => "Pivot",
-                "Ala-Pivot" => "Ala-Pivot",
+                "Base" => "Base", 
+                "Escolta" => "Escolta", 
+                "Alero" => "Alero", 
+                "Pivot" => "Pivot", 
+                "Ala-Pivot" => "Ala-Pivot", 
             );
             foreach ($pos as $key => $value) {
-                echo "<input type=checkbox value=" . $key . " name='posicion'>$value";
+                echo "<input type=checkbox value=" . $key .  "name='posicion'>$value";
             }
-            ?>
+            ?></p><br>
 
-            <p><input type="submit" value="Insertar" name="insertar">
-                <input type="submit" value="Modificar" name="modificar">
-                <input type="submit" value="Eliminar" name="eliminar">
-                <input type="submit" value="Mostrar" name="mostrar">
-                <input type="reset" value="Limpiar" name="limpiar">
-                <a href="final.php"><input type="button" value="Salir" name="salir"></a>
-            </p>
+            <p><input type="submit" value="Insertar" name="insertar" class="botonf">
+                <input type="submit" value="Modificar" name="modificar" class="botonf">
+                <input type="submit" value="Eliminar" name="eliminar" class="botonf">
+                <input type="submit" value="Mostrar" name="mostrar" class="botonf">
+                <input type="reset" value="Limpiar" name="limpiar" class="botonf">
+                <a href="final.php"><input type="button" value="Salir" name="salir" class="botonf"></a></p>
         </form>
         </div>
         <?php

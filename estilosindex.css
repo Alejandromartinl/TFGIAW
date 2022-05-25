@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-image: url(wallpaper.jpg);
@@ -24,6 +26,7 @@ body {
 header{
     text-align: center;
     margin-bottom: 2%;
+
 }
 
 
@@ -36,6 +39,10 @@ h2 {
     color: rgb(0, 0, 0);
     text-size-adjust: 50%;
     margin-bottom: 20px;
+}
+
+.iniciar{
+    color: rgb(0, 0, 0);
 }
 
 .formularioinicio {
@@ -56,16 +63,19 @@ h2 {
 
 /* SEGUNDA PÁGINA */
 
-
-footer {
- text-align: center;
-}
-
-
-.formulariofinal {
-    color: rgb(0, 0, 0);
+div {
     text-align: center;
-    margin-bottom: 7%;
+    margin-top: 20%;
+    -webkit-box-shadow: 0 2px 3px rgb(0 0 0 / 55%);
+    box-shadow: 0 2px 3px rgb(0 0 0 / 55%);
+    border: 1px solid rgba(0,0,0,0.4);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 18%; 
+    margin-bottom: 100px;
+    background-color:rgba(134, 255, 255, 0);
+    padding: 20px;
+
 }
 
 .botonf{
