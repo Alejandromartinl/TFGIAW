@@ -45,6 +45,7 @@
                 <input type="submit" value="Eliminar" name="eliminar" class="botonf">
                 <input type="submit" value="Mostrar" name="mostrar" class="botonf">
                 <input type="reset" value="Limpiar" name="limpiar" class="botonf">
+                <a href="eleccion.php"><input type="button" value="Volver" name="volver" class="botonf"></a></p>
                 <a href="final.php"><input type="button" value="Salir" name="salir" class="botonf"></a></p>
         </form>
     </div>
@@ -98,8 +99,7 @@
                 $entrenador = $tupla[3];
                 $estadio = $tupla[4];
                 $fecha = $tupla[5];
-                echo "********** Empleados registrados con Código: " . $codigo . " y Nombre: " . $nombre . 
-                " **********<br>";
+                echo "<i><u>Equipos registrados con Código: " . $codigo . " y Nombre: " . $nombre . "</u></i><br>";
                 echo "Ciudad: " . $ciudad . "<br>";
                 echo "Entrenador: " . $entrenador . "<br>";
                 echo "Estadio: " . $estadio . "<br>";
@@ -152,6 +152,7 @@
                 <input type="submit" value="Eliminar" name="eliminar" class="botonf">
                 <input type="submit" value="Mostrar" name="mostrar" class="botonf">
                 <input type="reset" value="Limpiar" name="limpiar" class="botonf">
+                <a href="eleccion.php"><input type="button" value="Volver" name="volver" class="botonf"></a></p>
                 <a href="final.php"><input type="button" value="Salir" name="salir" class="botonf"></a></p>
         </form>
             </div>
@@ -205,8 +206,8 @@
                 $sexo = $tupla[3];
                 $fecha = $tupla[4];
                 $equipo = $tupla[5];
-                echo "********** Empleados registrados con DNI: " . $dni . " , Nombre: " . $nombre . " y Apellidos: " . 
-                $apellidos . " **********<br>";
+                echo "<i><u>Presidentes registrados con DNI: " . $dni . " , Nombre: " . $nombre . " y Apellidos: " . 
+                $apellidos ."</u></i><br>";
                 echo "Sexo: " . $sexo . "<br>";
                 echo "Fecha Nacimiento: " . $fecha . "<br>";
                 echo "Equipo: " . $equipo . "<br>";
@@ -254,7 +255,7 @@
                 "Ala-Pivot" => "Ala-Pivot", 
             );
             foreach ($pos as $key => $value) {
-                echo "<input type=checkbox value=" . $key .  "name='posicion'>$value";
+                echo "<input type=checkbox value=" . $key .  " name='posicion'>$value ";
             }
             ?></p><br>
 
@@ -263,6 +264,7 @@
                 <input type="submit" value="Eliminar" name="eliminar" class="botonf">
                 <input type="submit" value="Mostrar" name="mostrar" class="botonf">
                 <input type="reset" value="Limpiar" name="limpiar" class="botonf">
+                <a href="eleccion.php"><input type="button" value="Volver" name="volver" class="botonf"></a></p>
                 <a href="final.php"><input type="button" value="Salir" name="salir" class="botonf"></a></p>
         </form>
         </div>
@@ -324,7 +326,7 @@
                 $telefono = $tupla[5];
                 $equipo = $tupla[6];
                 $posicion =$tupla[7];
-                echo "********** Empleados registrados con DNI: " . $dni . " y Nombre: " . $nombre . " **********<br>";
+                echo "<i><u>Jugadores registrados con DNI: " . $dni . " y Nombre: " . $nombre ."</u></i><br>";
                 echo "Apellidos: " . $apellidos . "<br>";
                 echo "Fecha Nacimiento: " . $fecha . "<br>";
                 echo "Email: " . $email . "<br>";

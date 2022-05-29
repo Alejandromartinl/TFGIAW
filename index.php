@@ -34,29 +34,11 @@
 
     </body>
     <!-- SEGUNDA PÁGINA -->
-    <footer>
     <?php
     } else {
-        echo "<div>";
-        $_SESSION['usuario'] = $_POST['usuario'];
-        echo "<h2>Bienvenid/a " . $_SESSION['usuario'] . "</h2>"; 
-        echo "<b>Indique la tabla que desea modificar.</b> <br>";
-        ?>
-        <br>
-        <form action="" method="post" class="formulariofinal">
-            <p><b><input type="radio" name="rol" value="equipo">Equipos</b></p><br>
-            <p><b><input type="radio" name="rol" value="presidente">Presidentes</b></p><br>
-            <p><b><input type="radio" name="rol" value="jugador">Jugadores</b></p><br>
-            <p><input type="submit" name="siguiente" value="Siguiente" class="botonf"></p>
-        </form>
-    <?php
+        $_SESSION['usuario']=$_POST['usuario'];
+        header('Location: eleccion.php');
     }
-    if (isset($_POST['siguiente'])) {
-        $_SESSION['rol'] = $_POST['rol'];
-        header('Location: registros.php');
-    }
-    echo "</div>";
-    ?>
-    </footer>
 
+    ?>
 </html>
